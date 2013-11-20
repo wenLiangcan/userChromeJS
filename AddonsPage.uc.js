@@ -1,0 +1,1 @@
+/home/wheely/.mozilla/firefox/hh7okkvz.default/chrome/AddonsPage/AddonsPage.uc.js
