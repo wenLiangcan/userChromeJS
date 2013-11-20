@@ -11,6 +11,7 @@
 // @version        2013/08/26
 // @homepageURL    https://github.com/ywzhaiqi/userChromeJS/tree/master/rebuild_userChrome
 // @reviewURL      https://github.com/ywzhaiqi/userChromeJS/issues
+// @note		2013/11/20 modified by wenLiangcan
 // @note        2013/08/26 modified by ywzhaiqi
 // @note        2013/03/22 08:02 Added "use strict"
 // @note        2013/03/22 08:01 Fixed commands to work properly, even if menus had been moved into other place
@@ -127,7 +128,7 @@
             menupopup.appendChild(menuseparator);
 
             menuitem = document.createElement('menuitem');
-            menuitem.setAttribute('label', 'userCrome.js 的 启用/禁用');
+            menuitem.setAttribute('label', 'Toggle userCromeJS');
             menuitem.setAttribute('oncommand', 'userChromejs.chgDirStat("*");');
             menuitem.setAttribute('onclick', 'if(event.button != 0) {event.stopPropagation();event.preventDefault();userChromejs.clickDirMenuitem(event,true);}');
             menuitem.setAttribute('type', 'checkbox');
@@ -165,7 +166,7 @@
                 menupopup.setAttribute('onpopupshowing', 'event.stopPropagation();');
 
                 menuitem = document.createElement('menuitem');
-                menuitem.setAttribute('label', 'chrome/' + (dirName == "root" ? "" : dirName) + ' 全部脚本的启用/禁用');
+                menuitem.setAttribute('label', 'chrome/' + (dirName == "root" ? "" : dirName) + ' Toggle All Scripts');
                 menuitem.setAttribute('oncommand', 'userChromejs.chgDirStat(this.dirName);');
                 menuitem.setAttribute('onclick', 'if(event.button != 0) {event.stopPropagation();event.preventDefault();userChromejs.clickDirMenuitem(event);}');
                 menuitem.setAttribute('type', 'checkbox');
@@ -446,27 +447,27 @@
   ]]></script>
 
   <menupopup id="appmenuPrimaryPane" idxxxx="contentAreaContextMenu">
-    <menu id="userChromejs_script_options_Menu" label="uc用户脚本设置"
+    <menu id="userChromejs_script_options_Menu" label="UC Scripts Settings"
           insertafter="appmenu_webDeveloper" >
       <menupopup id="userChromejs_script_options" />
     </menu>
-    <menu label="uc脚本设置" accesskey="u"
+    <menu label="userChromeJS Settings" accesskey="u"
           insertafter="appmenu_webDeveloper" >
       <menupopup id="userChromejs_options"
                  onpopupshowing="userChromejs.onpopup()"
                  context="">
         <menuitem id="userChrome_setting"
-                  label="在每个新窗口都重置脚本"
+                  label="Reset script at every new window"
                   accesskey="u"
                   oncommand="userChromejs.setting();"
                   type="checkbox" />
-        <menuitem label="打开新窗口并重置脚本"
+        <menuitem label="Open new window and reset scripts"
                   accesskey="x"
                   oncommand="userChromejs.rebuild();"/>
-        <menuitem label="重新启动浏览器"
+        <menuitem label="Restart browser"
                   accesskey="r"
                   oncommand="userChromejs.restartApp();"/>
-        <menuitem label="打开Chrome文件夹"
+        <menuitem label="Open folder 'chrome'"
                   accesskey="h"
                   oncommand='new Components.Constructor("@mozilla.org/file/local;1","nsILocalFile", "initWithPath")(Components.classes["@mozilla.org/file/directory_service;1"].getService(Components.interfaces.nsIProperties).get("UChrm", Components.interfaces.nsIFile).path).reveal();'/>
       </menupopup>
