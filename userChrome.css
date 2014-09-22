@@ -1,0 +1,21 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.toolbarbutton-menubutton-dropmarker {
+    display: none !important;
+}
+
+.toolbarbutton-1:hover .toolbarbutton-menubutton-dropmarker {
+    display: block !important;
+}
+
+#bookmarks-menu-button .toolbarbutton-menubutton-dropmarker {
+    display: block !important;
+}
+
+.tab-close-button {
+    display: none !important;
+}
+
+.tabbrowser-tab:hover .tab-close-button {
+    display: block !important;
+}
