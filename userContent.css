@@ -7,10 +7,11 @@
 }
 
 @-moz-document url-prefix("http://tieba.baidu.com") {
-.ui_card_wrap       { display:none !important; } /* T 豆 */
-.tbui_fbar_share    { display:none !important; } /* 浮动条分享按钮 */
-.tbui_fbar_square   { display:none !important; } /* 浮动条主播广场按钮 */
-.bdyx_tips          { display:none !important; } /* 今日游戏福利 */
+.ui_card_wrap           { display:none !important; } /* T 豆 */
+.tbui_fbar_share        { display:none !important; } /* 浮动条分享按钮 */
+.tbui_fbar_square       { display:none !important; } /* 浮动条主播广场按钮 */
+.bdyx_tips              { display:none !important; } /* 今日游戏福利 */
+.firework_sender_wrap   { display:none !important; } /* 烟花 */
 }
 
 @-moz-document url-prefix("http://huaban.com") {
@@ -184,7 +185,6 @@ a.qr            { display:none !important; } /* 右下角二维码 */
     .icon_yyshow            { display:none !important; }
     .top_iframe             { display:none !important; }
     #platform_left_float    { display:none !important; }
-    .forum_foot             { display:none !important; }
     .lzl_panel_wrapper>tbody>tr>td:first-child { display:none !important; }
     .j_thread_list[data-field*="\"id\":3026231092"] { display:none !important; }
     .comforum-swap-words { text-decoration: none; color: black; cursor:default }
