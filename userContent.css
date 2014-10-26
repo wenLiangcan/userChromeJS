@@ -76,7 +76,7 @@ a.qr            { display:none !important; } /* 右下角二维码 */
 /* 百度贴吧去广告 ad block for baidu tieba */
 /* http://userstyles.org/styles/94588 */
 @-moz-document domain("tieba.baidu.com") {
-    #ueg_policy_open        { display:none !important; }
+#ueg_policy_open        { display:none !important; }
     #hgame_mod_theme1       { display:none !important; }
     #hgame_mod_theme2       { display:none !important; }
     #lucky_lottery          { display:none !important; }
@@ -105,6 +105,7 @@ a.qr            { display:none !important; } /* 右下角二维码 */
     #game_pop_window        { display:none !important; }
     #j_worldcup_info_banner { display:none !important; }
     #basket_lottery         { display:none !important; }
+    #dasense_2              { display:none !important; }
     #dasense_3              { display:none !important; }
     #dasense_7              { display:none !important; }
     #dasense_15             { display:none !important; }
@@ -175,13 +176,19 @@ a.qr            { display:none !important; } /* 右下角二维码 */
     .fMember_cnt            { display:none !important; }
     .u9_head                { display:none !important; }
     .u9_aside               { display:none !important; }
+    .bdyx_tips_icon_        { display:none !important; }
+    #forum_recommend        { display:none !important; }
     #dasense_NAV_TOP        { display:none !important; }
+    .game_live_list         { display:none !important; }
+    .icon_yyshow            { display:none !important; }
+    .top_iframe             { display:none !important; }
+    #platform_left_float    { display:none !important; }
+    .forum_foot             { display:none !important; }
     .lzl_panel_wrapper>tbody>tr>td:first-child { display:none !important; }
     .j_thread_list[data-field*="\"id\":3026231092"] { display:none !important; }
     .comforum-swap-words { text-decoration: none; color: black; cursor:default }
     #game_swap_card  { display:none !important; }
 }
-
 
 /* Zhihu Website Card Style View, accessibility improved. */
 @-moz-document url-prefix("http://zhihu.com/"), url-prefix("http://www.zhihu.com/") {
