@@ -10,6 +10,7 @@
 .ui_card_wrap       { display:none !important; } /* T 豆 */
 .tbui_fbar_share    { display:none !important; } /* 浮动条分享按钮 */
 .tbui_fbar_square   { display:none !important; } /* 浮动条主播广场按钮 */
+.bdyx_tips          { display:none !important; } /* 今日游戏福利 */
 }
 
 @-moz-document url-prefix("http://huaban.com") {
